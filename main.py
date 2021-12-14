@@ -1,8 +1,16 @@
 from website import create_app
+from python.encryption import encrypt_pwd
 from sys import exit
 
-app = create_app()
+
+def test_env():
+    pass
+
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    if (1):
+        test_env()
+    else:
+        app = create_app()
+        app.run(debug=True)
     exit()

@@ -6,8 +6,8 @@ if __name__ == "__main__":
     stdout.flush()
     exit()
 
-
-CONST_ALPNUM: str = "0123456789abcdefghijklmnopqrstuvwxyz"
+CONST_ALPNUM: str = "abcdefghijklmnopqrstuvwxyz"
+# CONST_ALPNUM: str = "0123456789abcdefghijklmnopqrstuvwxyz"
 
 
 def encrypt_pwd(pwd: str, key: str) -> str:
@@ -16,7 +16,7 @@ def encrypt_pwd(pwd: str, key: str) -> str:
     """
     r: str = ""
     for idx, val in enumerate(pwd):
-        valPos: int = CONST_ALPNUM.index(val)
+        valPos: int = CONST_ALPNUM.index(val.lower())
         loop_key : chr = key[idx%len(key)]
         keyPos: int = CONST_ALPNUM.index(loop_key)
         r += CONST_ALPNUM[(valPos+keyPos)%len(CONST_ALPNUM)]
