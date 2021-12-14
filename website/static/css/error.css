@@ -1,0 +1,12 @@
+body {
+    background-color: #000000;
+}
+
+.error-title {
+    color: #ff0000;
+}
+
+.error-message {
+    color: #ffffff;
+    white-space: pre-line;
+}

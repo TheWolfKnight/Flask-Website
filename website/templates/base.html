@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="charset" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="tags" content="Fun Project No-Real">
+        <meta name="auther" content="Void, Sai">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+
+        <title>Flask Project</title>
+    </head>
+    <body>
+        <h1>{{ title }}</h1>
+        <div class="auth">
+            {% if inAuth == False %}
+            <a href="auth/login">Login</a>
+            <a href="auth/logout">Logout</a>
+            <a href="auth/sign-up">Sign Up</a>
+            {% else %}
+            <a href="login">Login</a>
+            <a href="logout">Logout</a>
+            <a href="sign-up">Sign Up</a>
+            <a href="/">To homepage</a>
+            {% endif %}
+        </div>
+    </body>
+</html>

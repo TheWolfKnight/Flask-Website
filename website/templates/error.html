@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="charset" charset="utf-8">
+        <meta name="auther" content="Void, Sai">
+        <meta name="tags" content="ERROR">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/error.css') }}">
+
+        <title>ERROR: {{ error_code }}</title>
+    </head>
+    <body>
+        <div class="error-title">
+            <h1>{{ error_code }}</h1>
+            <h2>You have encounterd an ERROR</h2>
+        </div>
+        <p class="error-message">
+            {{ error_content }}
+        </p>
+    </body>
+</html>

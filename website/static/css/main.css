@@ -1,0 +1,12 @@
+body {
+    background-color: #000000;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.auth {
+    color: #ff0000;
+    white-space: pre-line;
+}
