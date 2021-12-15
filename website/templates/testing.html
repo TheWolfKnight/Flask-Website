@@ -8,8 +8,8 @@
     <body>
         <h1>For testing and examples.</h1>
         <form action="{{ url_for('views.handling_data') }}" method="post">
-            <input type="text" name="Username">
-            <input type="submit">
+            <input type="text" name="Username" placeholder="Enter username here!">
+            <input type="submit" placeholder="Submit">
         </form>
         <p>{{ inpt }}</p>
     </body>

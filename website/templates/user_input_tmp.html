@@ -13,8 +13,14 @@
     <head>
         <h1>{{ type }}</h1>
         <div class="input-field">
-            <form>
-
+            {% if type == "Login" %}
+            <form action="{{ url_for('Auth.login') }}" method="post">
+            {% elif type == "Sign Up" %}
+            <form action="{{ url_for('Auth.sign_up') }}" method="post">
+            {% endif %}
+                <input type="text" name="Username" placeholder="Enter username here">
+                <input type="text" name="Password" placeholder="Enter password here">
+                <input type="submit" placeholder="Submit">
             </form>
         </div>
         <div class="nav-bar">
