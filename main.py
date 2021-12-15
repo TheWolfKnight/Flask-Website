@@ -1,6 +1,6 @@
-from website import create_app
 from python.encryption import encrypt_pwd
-from sys import exit
+from website import create_app
+from sys import exit, argv
 
 
 def test_env():
@@ -8,7 +8,7 @@ def test_env():
 
 
 if __name__ == "__main__":
-    if (1):
+    if (int(argv[1])):
         test_env()
     else:
         app = create_app()
