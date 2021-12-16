@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html, lang="en-US">
-    <head>
-        <meta name="charset" charset="utf-8">
-        <meta name="viewport" content="width=device-width initial-scale=1">
-        <title>Testing</title>
-    </head>
-    <body>
-        <h1>For testing and examples.</h1>
-        <form action="{{ url_for('views.handling_data') }}" method="post">
-            <input type="text" name="Username" placeholder="Enter username here!">
-            <input type="submit" placeholder="Submit">
-        </form>
-        <p>{{ inpt }}</p>
-    </body>
-</html>
+{% extends "nav_bar.html" %}
+{% block title %}Testing env{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+    <p>This is from testing</p>
+{% endblock %}
