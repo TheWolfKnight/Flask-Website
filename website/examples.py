@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
 
 
 Examples = Blueprint('Examples', __name__)
@@ -6,7 +6,7 @@ Examples = Blueprint('Examples', __name__)
 
 @Examples.route('/block-example')
 def block_example() -> str:
-    return render_template('block-example.html')
+    return render_template('examples/block-example.html')
 
 
 ###############################
@@ -15,15 +15,16 @@ def block_example() -> str:
 ### we delete the testing.html page, this
 ### must stay!!!
 ###############################
-"""
-@Views.route('/handling_data', methods=['GET'])
-def render_handling_data() -> str:
-    return render_template('testing.html')
+
+@Examples.route('/form-example', methods=['GET'])
+def render_form_example() -> str:
+    return render_template('examples/form-example.html', inpt="")
 
 
-@Views.route('/handling_data', methods=['POST'])
-def handling_data() -> str:
-    projectPath = request.form['Username']
-    return render_template('testing.html', inpt=projectPath)
-"""
+@Examples.route('/form-example', methods=['POST'])
+def form_example() -> str:
+    projectPath: str = request.form['Username']
+    print(projectPath)
+    return render_template('examples/form-example.html', inpt=projectPath)
+
 ###############################

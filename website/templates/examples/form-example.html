@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="charset" charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <title>Form example</title>
+    </head>
+    <body>
+        <h1>Form Example</h1>
+        <!-- Remeber that form requres the action and method to work, you dumb idiot self. -->
+        <form action="{{ url_for('Examples.form_example') }}" method='post'>
+            <input type="text" name="Username" placeholder="Username">
+            <input type="submit">
+        </form>
+        <p>{{ inpt }}</p>
+    </body>
+</html>
