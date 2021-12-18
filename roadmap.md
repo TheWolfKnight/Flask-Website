@@ -1,7 +1,7 @@
 
-# TODO:
+# TODO
 
-- Forum:
+1) Forum:
     - Login/Logout/Sign-up
     - Making Post
         - See/Comment for other users
@@ -15,8 +15,19 @@
     - A pixel
     - Logo
 
-# Void:
+# Void
 
+- Get the basic webstruct up
+- Learn general Flask
+- GET/POST requests
+- SQL setup
+- Google drev interface? (spofing accout system) (In Minecraft) (For many reasons, some legal, this is a joke)
 
-# Sai:
+# Sai
 
+- Learn blocks/extends
+- Logo
+- Name iDear
+- Color scheme
+- Page layout
+- TOS
