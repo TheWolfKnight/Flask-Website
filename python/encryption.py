@@ -6,13 +6,17 @@ if __name__ == "__main__":
     stdout.flush()
     exit()
 
-CONST_ALPNUM: str = "abcdefghijklmnopqrstuvwxyz"
-# CONST_ALPNUM: str = "0123456789abcdefghijklmnopqrstuvwxyz"
+
+CONST_ALPNUM: str = "0123456789abcdefghijklmnopqrstuvwxyz"
 
 
 def encrypt_pwd(pwd: str, key: str) -> str:
     """
-    Encrypts the given password using the 
+    Encrypts the given password using the incredible ciffer,\n
+    just to give the illision of security.\n
+    @param pwd: str\n
+    @param key: str\n
+    @return     str
     """
     r: str = ""
     for idx, val in enumerate(pwd):
